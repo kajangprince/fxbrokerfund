@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$db   = 'fxbrokerfund_db';
+$db   = 'fxbrokerfund';
 $user = 'fxbrokerfund_user';
 $pass = 'Alabastar08160$';
 $charset = 'utf8mb4';
