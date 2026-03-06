@@ -1,3 +1,3 @@
-# fxbrokerfund
+# Fxbrokerfund
 
-Simple Deriv Payment agent site built with HTML, Bootstrap, cSS and PHP.
+Simple Deriv Payment agent site that displays rates, allow deposit and withdrawals from clients.

@@ -1,12 +1,15 @@
 <?php
 
-$con = new PDO("mysql:host=localhost;dbname=vibecets_fxbrokerfund","vibecets_fxbrokerfund","Alabastar08160$");
+$host = 'localhost';
+$db   = 'fxbrokerfund_db';
+$user = 'fxbrokerfund_user';
+$pass = 'Alabastar08160$';
+$charset = 'utf8mb4';
 
-// Check connection
-//if ($con) {
-//  echo "";
-//}else{
- // echo"";	
-//}
-
-?>
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+try {
+     $pdo = new PDO($dsn, $user, $pass);
+     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (\PDOException $e) {
+     echo "Database connection failed: " . $e->getMessage();
+}
